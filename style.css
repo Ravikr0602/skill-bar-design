@@ -1,0 +1,334 @@
+
+/**************************************************************************************************************
+skill 
+***************************************************************************************************************/
+
+.my_skills
+{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid gray;
+    box-shadow: 4px 4px 4px gray;
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+    background-image: url("skill_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.skill_title
+{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
+    color: red; 
+}
+.skill_title #sk_title
+{
+    border-bottom: 5px solid red; 
+    padding-bottom: 3px;
+    border-radius: 5px;
+}
+.skill_box
+{
+  
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+  
+}
+#lang
+{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 4px;
+    
+}
+/*******************************************************/
+.skill_box .skill_front
+{
+  
+   width: 49%;
+   height: auto;
+}
+
+/********************************************************/
+.skill_box .skill_back
+{
+   width: 49%;
+   height: auto;
+}
+
+ .subject {
+    margin-bottom: 30px;
+    position: relative;
+    overflow-x:hidden;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+   
+}
+.subject > p {
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+    margin: 0;
+}
+.subject:before{
+    width: 100%;
+    height: 18px;
+    border-radius: 10px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: white;
+    bottom: 0;
+}
+.skill-bar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  height: 50px;
+  z-index: -1;
+  border-radius: 100px;
+  position: absolute;
+}
+.skill_bar {
+    border-radius: 10px;
+    width: 100%;
+    height: 18px;
+    background: red; 
+    display: block;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+.skill_bar span{
+    position: absolute;
+    border-top: 5px solid red; 
+    padding: 0;
+    font-size: 18px;
+    color: black;
+    padding: 3px 0;
+    padding-right: 10px;
+    font-weight: 800;
+}
+.skill_bar {
+    position: relative;
+  
+} 
+
+/* SKILL 1 */
+.language1{
+    width: 80%;
+    animation: html 2s;
+}
+.language1 .subject1 {
+    right: 0;
+}
+
+/* SKILL 2 */
+.language2{
+    width: 85%;
+    animation: css 2s;
+}
+
+.language2 .subject2 {
+    right: 0;
+}
+
+/* SKILL 3 */
+.language3{
+    width: 50%;
+    animation: js 2s;
+}
+.language3 .subject3 {
+    right: 0;
+}
+
+/* SKILL 4 */
+.language4{
+    width: 80%;
+    animation: bootstrap 2s;
+}
+
+.language4 .subject4 {
+    right: 0;
+}
+
+/* SKILL 5 */
+.language5{
+  width: 55%;
+  animation: nodejs 2s;
+}
+
+.language5 .subject5 {
+  right: 0;
+}
+
+/* SKILL 6 */
+.language6{
+    width: 78%;
+    animation: php 2s;
+}
+
+.language6 .subject6 {
+    right: 0;
+}
+
+/* SKILL 7 */
+.language7{
+    width: 55%;
+    animation: java 2s;
+}
+
+.language7 .subject7 {
+    right: 0;
+}
+
+/* SKILL 8 */
+.language8{
+    width: 90%;
+    animation: sql 2s;
+}
+
+.language8 .subject8 {
+    right: 0;
+}
+
+/* SKILL 9 */
+.language9{
+    width: 91%;
+    animation: mysql 2s;
+}
+
+.language9 .subject9 {
+    right: 0;
+}
+
+/* SKILL 10 */
+.language10{
+    width: 91%;
+    animation: mongodb 2s;
+}
+
+.language10 .subject10 {
+    right: 0;
+}
+
+@keyframes html{
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 80%;
+	}
+}
+
+@keyframes css{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 85%;
+	}
+}
+
+@keyframes javascript{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 45%;
+	}
+}
+
+@keyframes bootstrap{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 75%;
+	}
+}
+@keyframes php{
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 78%;
+	}
+}
+@keyframes nodejs{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 45%;
+	}
+}
+@keyframes java{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 50%;
+	}
+}
+@keyframes sql{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 90%;
+	}
+}
+@keyframes mysql{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 91%;
+	}
+}
+@keyframes mongodb{
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 91%;
+	}
+}
+ 
+@media screen and (max-width: 402px)
+{
+  .skill_title
+  {
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: 'Roboto', sans-serif;
+      margin-top: 10px;
+  }
+} 
