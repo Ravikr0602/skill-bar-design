@@ -1,4 +1,10 @@
-
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+	
 /**************************************************************************************************************
 skill 
 ***************************************************************************************************************/
@@ -17,30 +23,22 @@ skill
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 10px;
-    background-image: url("skill_bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
+    background-color: black;
 }
 
 .skill_title
 {
     text-align: center;
     font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
     margin-top: 5px;
-    color: red; 
+    color: #ff0047; 
 }
-.skill_title #sk_title
-{
-    border-bottom: 5px solid red; 
-    padding-bottom: 3px;
-    border-radius: 5px;
-}
+
 .skill_box
 {
   
-  display: flex;
+  display: flex; 
+  flex-direction: row;
   width: 100%;
   height: auto;
   margin-top: 25px;
@@ -56,7 +54,9 @@ skill
 /*******************************************************/
 .skill_box .skill_front
 {
-  
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
    width: 49%;
    height: auto;
 }
@@ -64,6 +64,9 @@ skill
 /********************************************************/
 .skill_box .skill_back
 {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;	
    width: 49%;
    height: auto;
 }
@@ -105,7 +108,7 @@ skill
     border-radius: 10px;
     width: 100%;
     height: 18px;
-    background: red; 
+    background: #ff0047; 
     display: block;
     position: relative;
     display: flex;
@@ -117,7 +120,7 @@ skill
 
 .skill_bar span{
     position: absolute;
-    border-top: 5px solid red; 
+    border-top: 5px solid #ff0047; 
     padding: 0;
     font-size: 18px;
     color: black;
@@ -130,7 +133,7 @@ skill
   
 } 
 
-/* SKILL 1 */
+/* SKILL 1 ( HTML ) */
 .language1{
     width: 80%;
     animation: html 2s;
@@ -139,7 +142,7 @@ skill
     right: 0;
 }
 
-/* SKILL 2 */
+/* SKILL 2 ( CSS ) */
 .language2{
     width: 85%;
     animation: css 2s;
@@ -149,7 +152,7 @@ skill
     right: 0;
 }
 
-/* SKILL 3 */
+/* SKILL 3  ( JavaScript ) */
 .language3{
     width: 50%;
     animation: js 2s;
@@ -158,7 +161,7 @@ skill
     right: 0;
 }
 
-/* SKILL 4 */
+/* SKILL 4 ( Bootstrap ) */
 .language4{
     width: 80%;
     animation: bootstrap 2s;
@@ -168,7 +171,7 @@ skill
     right: 0;
 }
 
-/* SKILL 5 */
+/* SKILL 5  ( NodeJs ) */
 .language5{
   width: 55%;
   animation: nodejs 2s;
@@ -178,7 +181,7 @@ skill
   right: 0;
 }
 
-/* SKILL 6 */
+/* SKILL 6  ( PHP ) */
 .language6{
     width: 78%;
     animation: php 2s;
@@ -188,7 +191,7 @@ skill
     right: 0;
 }
 
-/* SKILL 7 */
+/* SKILL 7 ( Java ) */
 .language7{
     width: 55%;
     animation: java 2s;
@@ -198,9 +201,9 @@ skill
     right: 0;
 }
 
-/* SKILL 8 */
+/* SKILL 8 ( SQL ) */
 .language8{
-    width: 90%;
+    width: 85%;
     animation: sql 2s;
 }
 
@@ -208,9 +211,9 @@ skill
     right: 0;
 }
 
-/* SKILL 9 */
+/* SKILL 9 ( MySQL )*/
 .language9{
-    width: 91%;
+    width: 83%;
     animation: mysql 2s;
 }
 
@@ -218,9 +221,9 @@ skill
     right: 0;
 }
 
-/* SKILL 10 */
+/* SKILL 10  (MongoDB) */
 .language10{
-    width: 91%;
+    width: 81%;
     animation: mongodb 2s;
 }
 
@@ -300,7 +303,7 @@ skill
 	}
 
 	100%{
-		width: 90%;
+		width: 85%;
 	}
 }
 @keyframes mysql{ 
@@ -309,7 +312,7 @@ skill
 	}
 
 	100%{
-		width: 91%;
+		width: 83%;
 	}
 }
 @keyframes mongodb{
@@ -318,11 +321,11 @@ skill
 	}
 
 	100%{
-		width: 91%;
+		width: 81%;
 	}
 }
  
-@media screen and (max-width: 402px)
+@media screen and (max-width: 768px)
 {
   .skill_title
   {
@@ -330,5 +333,18 @@ skill
       font-size: 1.5rem;
       font-family: 'Roboto', sans-serif;
       margin-top: 10px;
+  }
+  .skill_box
+  {
+      width: 100%;
+      flex-direction: column;
+  }
+  .skill_box .skill_front
+  {
+      width: 100%;
+  }
+  .skill_box .skill_back
+  {
+      width: 100%;
   }
 } 
